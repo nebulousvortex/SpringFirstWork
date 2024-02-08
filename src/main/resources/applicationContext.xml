@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                          http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="Sasha" class="org.example.springtry.Student">
+        <constructor-arg value="Sasha"/>
+        <constructor-arg>
+            <map>
+                <entry key="Python" value="5"/>
+                <entry key="Java" value="5"/>
+            </map>
+        </constructor-arg>
+        <constructor-arg value="false"/>
+    </bean>
+
+    <bean id="Darya" class="org.example.springtry.Student">
+        <constructor-arg value="Darya"/>
+        <constructor-arg>
+            <map>
+                <entry key="Python" value="2"/>
+                <entry key="Java" value="3"/>
+            </map>
+        </constructor-arg>
+        <constructor-arg value="false"/>
+    </bean>
+
+    <bean id="Fedor" class="org.example.springtry.Student">
+        <constructor-arg value="Fedor"/>
+        <constructor-arg>
+            <map>
+                <entry key="Python" value="4"/>
+                <entry key="Java" value="4"/>
+            </map>
+        </constructor-arg>
+        <constructor-arg value="false"/>
+    </bean>
+
+    <bean id="Jil" class="org.example.springtry.Student">
+        <constructor-arg value="Jil"/>
+        <constructor-arg>
+            <map>
+                <entry key="Python" value="1"/>
+                <entry key="Java" value="1"/>
+            </map>
+        </constructor-arg>
+        <constructor-arg value="false"/>
+    </bean>
+
+    <!-- Конфигурация бина для преподавателя -->
+    <context:component-scan base-package="org.example.springtry"/>
+</beans>
