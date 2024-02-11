@@ -1,4 +1,4 @@
-package org.example.springtry;
+package org.example.springtry.model;
 
 import java.util.Map;
 

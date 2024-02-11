@@ -1,6 +1,7 @@
-package org.example.springtry;
+package org.example.springtry.config;
 
-import org.springframework.beans.BeansException;
+import org.example.springtry.model.Student;
+import org.example.springtry.model.Teacher;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

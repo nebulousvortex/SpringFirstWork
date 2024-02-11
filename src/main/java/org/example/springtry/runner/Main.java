@@ -1,5 +1,7 @@
-package org.example.springtry;
+package org.example.springtry.runner;
 
+import org.example.springtry.config.ApplicationConfiguration;
+import org.example.springtry.model.Teacher;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

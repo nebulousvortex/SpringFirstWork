@@ -1,6 +1,6 @@
-package org.example.springtry;
+package org.example.springtry.model;
 
-import org.example.springtry.Student;
+import org.example.springtry.model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
