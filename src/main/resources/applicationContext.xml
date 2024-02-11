@@ -5,7 +5,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="Sasha" class="org.example.springtry.Student">
+    <bean id="Sasha" class="org.example.springtry.Student" init-method="init">
         <constructor-arg value="Sasha"/>
         <constructor-arg>
             <map>
@@ -16,7 +16,7 @@
         <constructor-arg value="false"/>
     </bean>
 
-    <bean id="Darya" class="org.example.springtry.Student">
+    <bean id="Darya" class="org.example.springtry.Student" init-method="init">
         <constructor-arg value="Darya"/>
         <constructor-arg>
             <map>
@@ -27,7 +27,7 @@
         <constructor-arg value="false"/>
     </bean>
 
-    <bean id="Fedor" class="org.example.springtry.Student">
+    <bean id="Fedor" class="org.example.springtry.Student" init-method="init">
         <constructor-arg value="Fedor"/>
         <constructor-arg>
             <map>
@@ -38,7 +38,7 @@
         <constructor-arg value="false"/>
     </bean>
 
-    <bean id="Jil" class="org.example.springtry.Student">
+    <bean id="Jil" class="org.example.springtry.Student" init-method="init">
         <constructor-arg value="Jil"/>
         <constructor-arg>
             <map>

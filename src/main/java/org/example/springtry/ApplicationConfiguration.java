@@ -21,6 +21,7 @@ public class ApplicationConfiguration {
 
         return new Student("Jil", grades, false);
     }
+
     @Bean(initMethod = "init")
     public Student Sasha() {
         Map<String, Integer> grades = new HashMap<>();
@@ -56,17 +57,6 @@ public class ApplicationConfiguration {
     @Bean
     public BeanPostProcessor studentBeanPostProcessor() {
         return new StudentBeanPostProcessor();
-    }
-}
-
-class StudentBeanPostProcessor implements BeanPostProcessor {
-    @Override
-    public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-        if (bean instanceof Student && ((Student) bean).getName().equals("Jil")) {
-            Map<String, Integer> grades = ((Student) bean).getGrades();
-            grades.replaceAll((subject, grade) -> grade + 1);
-        }
-        return bean;
     }
 }
 
